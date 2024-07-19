@@ -1,0 +1,14 @@
+.cdimg{
+    background-image: url(../../assets/offi1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity:80% ;
+}
+.cdhead{
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+}
+.box:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7) ;
+    
+}
