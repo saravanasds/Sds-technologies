@@ -1,5 +1,6 @@
 import React from 'react'
 import whitebg from '../../assets/bg111.png'
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Aboutcom1 = () => { 
 
@@ -17,6 +18,9 @@ const Aboutcom1 = () => {
 
       <div className='w-[100%] flex flex-col justify-center items-center sm:overflow-hidden'>
         <h2 className='w-[650px] font-bold text-[#73D1FF] mt-20 bg-gradient-to-r(rgb(43,21,93),rgb(117,65,191)) text-center mb-5 text-5xl md:text-6xl lg:text-7xl waving2' data-aos="zoom-in">{aboutTitleWaving}</h2>
+        <div className='font-bold text-3xl sm:text-4xl lg:text-6xl py-10 text-white bounceMedium flex justify-center items-center'>
+            <FaAngleDoubleDown />
+          </div>
       </div>
     </div>
     

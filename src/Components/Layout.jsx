@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
+import MouseFollower from './MouseFollow';
 
 function Layout() {
   return (
@@ -10,9 +11,10 @@ function Layout() {
       <div className="relative z-20">
         <Header />
       </div>
-      <main className="relative flex-grow -mt-16 z-10">
+      <main className="relative flex-grow -mt-16 z-10 main-content">
+        <MouseFollower />
         <Outlet />
-        <ScrollToTopButton/>
+        <ScrollToTopButton />
       </main>
       <Footer />
     </div>

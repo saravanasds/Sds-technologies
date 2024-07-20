@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaServicestack, FaInfoCircle, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-// import {  } from 'react-icons/fa';
+import { GoFileSubmodule } from "react-icons/go";
 import "./Components.css"
 import sdslogo from ".././assets/logo-white.png"
 
@@ -25,7 +25,7 @@ function Footer() {
           <div className="flex items-center justify-center" >
             <h1>
               <div className="text-2xl font-bold text-white uppercase tracking-wider transition-all duration-300 hover:text-blue-500 hover:scale-110 cursor-pointer">
-              <img src={sdslogo} alt="" className='w-60'/>
+                <img src={sdslogo} alt="" className='w-60' />
               </div>
 
             </h1>
@@ -39,19 +39,24 @@ function Footer() {
               </h3>
             </div>
             <ul className="text-white space-y-2 w-full">
-              <li className="flex items-center hover:text-black transition-colors duration-300">
+              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
                 <FaHome className="mr-2" />
                 <Link to="/" onClick={scrollToTop}>Home</Link>
               </li>
-              <li className="flex items-center hover:text-black transition-colors duration-300">
+              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
                 <FaEnvelope className="mr-2" />
                 <Link to="/about" onClick={scrollToTop}>About us</Link>
               </li>
-              <li className="flex items-center hover:text-black transition-colors duration-300">
+              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
                 <FaServicestack className="mr-2" />
                 <Link to="/services" onClick={scrollToTop} >Services</Link>
               </li>
-              <li className="flex items-center hover:text-black transition-colors duration-300">
+              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
+                <GoFileSubmodule  className="mr-2 " />
+                <Link to="/projects" onClick={scrollToTop}>Projects</Link>
+              </li>
+
+              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
                 <FaInfoCircle className="mr-2" />
                 <Link to="/courses" onClick={scrollToTop}>Courses</Link>
               </li>
@@ -87,8 +92,12 @@ function Footer() {
               </h3>
             </div>
 
-            <p className="text-white text-left w-full">123 Street, City</p>
-            <p className="text-white text-left w-full">State, Country</p>
+            <p className="text-white text-left w-full">Red Cross Street,<br />
+              Shanmugapuram,<br />
+              Palani - 642601,<br />
+              Dindigul
+              </p>
+            
           </div>
         </div>
 
@@ -127,8 +136,8 @@ function Footer() {
         {/* <hr className='  mt-8 '/> */}
         {/* Bottom Disclaimer */}
         <div className="container mx-auto mt-4 text-sm tracking-wider text-center">
-          <p className='text-white '>&copy; Copyright 2024 - <span className='font-montserrat font-bold text-blue-400 cursor-pointer'>SDS Solutions </span> All rights reserved.</p>
-          
+          <p className='text-white '>&copy; Copyright 2024 - <span className='font-montserrat font-bold text-blue-400 cursor-pointer'>SDS Technologies </span> All rights reserved.</p>
+
         </div>
 
       </div>

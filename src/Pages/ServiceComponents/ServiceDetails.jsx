@@ -6,6 +6,7 @@ import Graphics from "../ServiceComponents/ServiceLinks/GraphicDesign.jsx";
 import Hoisting from "../ServiceComponents/ServiceLinks/WebHoisting.jsx";
 import DigitalMar from "../ServiceComponents/ServiceLinks/DigitalMarketing.jsx";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import { FaAngleDoubleDown } from "react-icons/fa";
 import req from "../../assets/req.png"
 
 // import Banner1 from "../../assets/Service-Assets/Banner/webdev.jpg";
@@ -157,15 +158,19 @@ function ServiceDetail() {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 w-full h-full bg-black opacity-50"></div>
+        <div className="absolute inset-0 w-full h-full bg-black  flex flex-col justify-center items-center">
         <h1 className={`relative text-3xl md:text-5xl lg:text-6xl text-white font-bold tracking-wider text-center ${isSmallScreen ? 'waving2' : ''}`}>
           {isSmallScreen ? title : service.title}
         </h1>
+        <div className='font-bold text-3xl sm:text-4xl lg:text-6xl py-10 text-white bounceMedium flex justify-center items-center'>
+          <FaAngleDoubleDown />
+        </div>
+        </div>
       </div>
 
       <div className='container py-10 mx-auto bg-gradient-to-t from-black via-gray-900 to-black text-white' data-aos="fade-up ">
         <div className='mb-10 border-2 border-gray-900'>
-          <p className="whitespace-pre-line px-10 text-white text-center bg-gradient-to-t from-black via-gray-900 to-black pb-8 tracking-wider leading-relaxed text-md sm:text-xl">{service.description}</p>
+          <p className="whitespace-pre-line px-10 sm:px-20 text-white text-center bg-gradient-to-t from-black via-gray-900 to-black pb-8 tracking-wider leading-relaxed text-sm sm:text-md">{service.description}</p>
         </div>
 
         {service.component && (

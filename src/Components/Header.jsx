@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import sdslogo from ".././assets/logo-white.png"
 import { FaHome, FaServicestack, FaInfoCircle, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { GrProjects } from "react-icons/gr";
+import { GoFileSubmodule } from "react-icons/go";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,6 +60,18 @@ function Header() {
           </li>
           <li>
             <NavLink
+              to="/projects"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-[#73D1FF] border-b-2 border-[#73D1FF] pb-2 font-extrabold text-sm uppercase tracking-wider "
+                  : "text-white hover:text-[#73D1FF] text-sm pb-2 uppercase font-semibold nav-link tracking-wider"
+              }
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/courses"
               className={({ isActive }) =>
                 isActive
@@ -69,7 +83,7 @@ function Header() {
             </NavLink>
           </li>
           <li>
-            <button className="md:ml-20 bg-gradient-to-r from-[#73D1FF] via-gray-900 to-black hover:scale-110 text-white font-bold py-2 px-8 rounded-lg border-[1px] border-gray-800 uppercase">
+            <button className="md:ml-20 bg-gradient-to-r from-[#73D1FF] via-gray-900 to-black hover:scale-110 transition-all duration-300  text-white font-bold py-2 px-8 rounded-lg border-[1px] border-gray-800 uppercase">
               <Link to="/contact" className="text-sm">
                 Contact Us
               </Link>
@@ -133,6 +147,21 @@ function Header() {
                 >
                   <div className="flex items-center gap-4">
                     <FaServicestack className="text-xl" /> <div>Services</div>
+                  </div>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/projects"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-blue-500 border-b-2 border-blue-500 pb-2 font-bold text-lg"
+                      : "text-gray-900 hover:text-blue-700 text-lg"
+                  }
+                  onClick={toggleMenu}
+                >
+                  <div className="flex items-center gap-4">
+                    <GoFileSubmodule className="text-xl" /> <div>Projects</div>
                   </div>
                 </NavLink>
               </li>

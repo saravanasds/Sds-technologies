@@ -13,7 +13,7 @@ const Aboutcom3 = () => {
               className="w-[260px] h-[260px]  duration-300  text-white hover:text-white rounded-2xl transform  flex flex-col justify-center items-center "
               style={{ boxShadow: "2px 2px 12px #73D1FF" }}>
               <h2 className="text-2xl md:text-4xl font-bold ">Our Mission</h2>
-              <p className="p-5 font-normal text-center text-sm sm:text-xl">
+              <p className="p-5 font-normal text-center text-sm sm:text-md tracking-wider">
                 You Dream it, We Prove it, through embracing the power of
                 Digital Transformation
               </p>
@@ -24,7 +24,7 @@ const Aboutcom3 = () => {
               style={{ boxShadow: "2px 2px 12px #73D1FF" }}
             >
               <h2 className="text-2xl md:text-4xl font-bold">Our Vision</h2>
-              <p className="p-5 font-normal text-center text-sm sm:text-xl">
+              <p className="p-5 font-normal text-center text-sm sm:text-md tracking-wider">
                 Continuously working to produce many world-class techno preneurs
                 from diversified industries.
               </p>

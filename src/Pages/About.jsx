@@ -4,6 +4,8 @@ import Aboutcom3 from './Aboutcomponent/Aboutcom3.jsx'
 import Aboutcom4 from './Aboutcomponent/Aboutcom4.jsx'
 import Aboutcom5 from './Aboutcomponent/Aboutcom5.jsx'
 import Aboutcom6 from './Aboutcomponent/Aboutcom6.jsx'
+
+
 // import Aboutcom7 from './Aboutcomponent/Aboutcom7.jsx'
 
 

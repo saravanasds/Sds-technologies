@@ -5,6 +5,7 @@ import { PiFigmaLogoFill } from "react-icons/pi";
 import { CgWebsite } from "react-icons/cg";
 import { SiCoinmarketcap } from "react-icons/si";
 import { SlSocialInstagram } from "react-icons/sl";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 import ServiceCard from './ServiceComponents/ServiceCard';
 import ServiceHead from './ServiceComponents/ServiceHead';
@@ -76,10 +77,13 @@ function ServicesComponent() {
   return (
     <>
       <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
-        <div className="absolute inset-0 mx-auto opacity-50 animate-bg-image backdrop-blur-sm " style={{ backgroundImage: `url(${servicebg})`, backgroundPosition: 'top', backgroundSize: "fit", backgroundRepeat: "no-repeat", backgroundBlendMode: "hard-light" }}></div>
+        <div className="absolute inset-0 mx-auto opacity-30 animate-bg-image backdrop-blur-sm " style={{ backgroundImage: `url(${servicebg})`, backgroundPosition: 'top', backgroundSize: "fit", backgroundRepeat: "no-repeat", backgroundBlendMode: "hard-light" }}></div>
 
         <div className='w-[100%] flex flex-col justify-center items-center sm:overflow-hidden'>
-          <h2 className=' gradient-text font-bold mt-20  text-center mb-5  text-3xl md:text-6xl lg:text-7xl' data-aos="zoom-in"><span className='waving2 text-white tracking-wider'>{serviceTitleWaving}</span></h2>
+          <h2 className=' gradient-text font-bold mt-20  text-center mb-5  text-3xl md:text-6xl lg:text-7xl' data-aos="zoom-in"><span className='waving2 text-[#73D1FF] tracking-wider'>{serviceTitleWaving}</span></h2>
+          <div className='font-bold text-3xl sm:text-4xl lg:text-6xl py-10 text-white bounceMedium flex justify-center items-center'>
+            <FaAngleDoubleDown />
+          </div>
         </div>
       </div>
 

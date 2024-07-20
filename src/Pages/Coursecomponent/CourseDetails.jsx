@@ -19,10 +19,10 @@ const CourseDeatils = () => {
         <div className="absolute inset-0 mx-auto opacity-40 bg-cover bg-center animate-bg-image backdrop-blur-sm" style={{ backgroundImage: `url(${coursebg})`, backgroundPosition: 'center', backgroundSize: "fit", backgroundRepeat: "no-repeat", backgroundBlendMode: "hard-light" }}></div>
 
         <div className='w-[100%] flex flex-col justify-center items-center sm:overflow-hidden'>
-          <h2 className='w-[650px] font-bold text-[#73D1FF] mt-20 bg-gradient-to-r(rgb(43,21,93),rgb(117,65,191)) text-center mb-5 text-5xl md:text-6xl lg:text-7xl waving2' data-aos="zoom-in">{courseTitleWaving}</h2>
-          <div className='font-bold text-4xl sm:text-6xl lg:text-8xl py-10 text-white bounceMedium flex justify-center items-center'>
-              <FaAngleDoubleDown />
-            </div>
+          <h2 className='w-[650px] font-bold text-[#73D1FF] mt-20 bg-gradient-to-r(rgb(43,21,93),rgb(117,65,191)) text-center mb-5 text-5xl md:text-6xl lg:text-7xl waving2 tracking-wider' data-aos="zoom-in">{courseTitleWaving}</h2>
+          <div className='font-bold text-3xl sm:text-4xl lg:text-6xl py-10 text-white bounceMedium flex justify-center items-center'>
+            <FaAngleDoubleDown />
+          </div>
         </div>
       </div>
     </>
