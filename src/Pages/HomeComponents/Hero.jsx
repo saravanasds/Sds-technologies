@@ -41,7 +41,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 mx-auto bg-cover bg-center animate-bg-image" style={{ backgroundImage: `url(${HeroBg})`, }} ></div>
 
-      <div className="relative z-10 text-center p-5 w-full -mt-[100px]" >
+      <div className="relative z-10 text-center p-5 w-full -mt-[200px]" >
         <Slider {...settings}>
           <div>
             <h1 className="text-3xl md:text-5xl text-white font-bold mb-4" data-aos="slide-right" data-aos-delay="300">
