@@ -92,7 +92,7 @@ function Footer() {
               </h3>
             </div>
 
-            <p className="text-white text-left w-full">Red Cross Street,<br />
+            <p className="text-white text-left w-full">Red Cross Road,<br />
               Shanmugapuram,<br />
               Palani - 642601,<br />
               Dindigul
