@@ -20,16 +20,22 @@ function Header() {
   return (
     <nav className="bg-black  sticky top-0 z-20 border-b-[0.5px] border-gray-700 flex flex-col justify-center items-center">
       <div className='w-full h-10 flex justify-between items-center px-5 md:px-10 shadow shadow-gray-800'>
-        <div className='flex gap-4 md:gap-10 font-light text-sm'>
-          <a href="" className='text-[#73D1FF] tracking-widest flex gap-1 items-center'><IoIosMail className='h-6 w-6 text-white' />sdspalani@gmail.com</a>
-          <span className='text-[#73D1FF] tracking-widest flex gap-2 items-center'><FaPhoneAlt className='h-4 w-4 text-white' />9384293632</span>
-        </div>
+        
+      <div className='flex gap-4 md:gap-10 font-light text-sm'>
+  <a href="mailto:sdspalani@gmail.com" className='text-[#73D1FF] tracking-widest flex gap-1 items-center'>
+    <IoIosMail className='h-6 w-6 text-white' />sdspalani@gmail.com
+  </a>
+  <span className='text-[#73D1FF] tracking-widest flex gap-2 items-center'>
+    <FaPhoneAlt className='h-4 w-4 text-white' />9384293632
+  </span>
+</div>
+
         <div className='flex gap-4 md:gap-6 font-light'>
-          <a href="" className='text-[#73D1FF] tracking-widest'><FaInstagramSquare className='h-4 w-4 text-white'/></a>
-          <a href="" className='text-[#73D1FF] tracking-widest'><FaFacebookSquare className='h-4 w-4 text-white'/></a>
-          <a href="" className='text-[#73D1FF] tracking-widest'><IoLogoYoutube className='h-4 w-4 text-white'/></a>
-          <a href="" className='text-[#73D1FF] tracking-widest'><FaLinkedin className='h-4 w-4 text-white'/></a>
-          <a href="" className='text-[#73D1FF] tracking-widest'><SiIndeed className='h-4 w-4 text-white'/></a>
+          <a href="https://www.instagram.com/sds_technology_?igsh=MThrbnFmaTZueDN4eg==" target='blank' className='text-[#73D1FF] tracking-widest'><FaInstagramSquare className='h-4 w-4 text-white transition-all duration-300 hover:text-pink-500 '/></a>
+          <a href="" target='blank' className='text-[#73D1FF] tracking-widest'><FaFacebookSquare className='h-4 w-4 text-white transition-all duration-300 hover:text-blue-900'/></a>
+          <a href="" target='blank' className='text-[#73D1FF] tracking-widest'><IoLogoYoutube className='h-4 w-4 text-white transition-all duration-300 hover:text-red-900'/></a>
+          <a href="" target='blank' className='text-[#73D1FF] tracking-widest'><FaLinkedin className='h-4 w-4 text-white transition-all duration-300 hover:text-sky-400'/></a>
+          <a href="" target='blank' className='text-[#73D1FF] tracking-widest'><SiIndeed className='h-4 w-4 text-white transition-all duration-300 hover:text-cyan-600'/></a>
         </div>
       </div>
       <div className="w-[90%] flex justify-between items-center p-4 md:p-8" data-aos="fade-down" data-aos-delay="300">

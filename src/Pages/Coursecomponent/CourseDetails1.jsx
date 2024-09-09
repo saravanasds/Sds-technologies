@@ -21,7 +21,7 @@ const course = [
   {
     id: 2,
     text: "App Development",
-    text1: "(App Application)",
+    text1: "(Mobile Application)",
     image: app,
     link: "/App1",
   },

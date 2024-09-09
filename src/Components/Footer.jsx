@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaServicestack, FaInfoCircle, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { FaHome, FaServicestack, FaInfoCircle, FaEnvelope, FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { SiIndeed } from "react-icons/si";
 import { GoFileSubmodule } from "react-icons/go";
 import "./Components.css"
 import sdslogo from ".././assets/logo-white.png"
@@ -97,6 +98,8 @@ function Footer() {
               Palani - 642601,<br />
               Dindigul
               </p>
+          <p></p>
+        
             
           </div>
         </div>
@@ -114,19 +117,29 @@ function Footer() {
               <li className='text-blue-900 bg-white p-2 rounded-lg md:px-8 hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
                 <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaFacebook className='text-2xl sm:text-4xl' />
-                  <span className='hidden xl:block'>Facebook</span>
+                  {/* <span className='hidden xl:block'>Facebook</span> */}
                 </a>
               </li>
               <li className='text-pink-600  hover:text-pink-700 bg-white p-2 rounded-lg md:px-8 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
+                <a href="https://www.instagram.com/sds_technology_?igsh=MThrbnFmaTZueDN4eg==" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaInstagram className='text-2xl sm:text-4xl' />
-                  <span className='hidden xl:block'>Instagram</span>
+                  {/* <span className='hidden xl:block'>Instagram</span> */}
                 </a>
               </li>
               <li className='text-red-600  hover:text-red-700 bg-white p-2 rounded-lg md:px-8 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
                 <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaYoutube className='text-2xl sm:text-4xl' />
-                  <span className='hidden xl:block'>Youtube</span>
+                  {/* <span className='hidden xl:block'>Youtube</span> */}
+                </a>
+              </li>
+              <li className='text-sky-600  hover:text-sky-700 bg-white p-2 rounded-lg md:px-8 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
+                <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
+                  <FaLinkedin className='text-2xl sm:text-4xl' />
+                </a>
+              </li>
+              <li className='text-cyan-600  hover:text-cyan-700 bg-white p-2 rounded-lg md:px-8 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
+                <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
+                  <SiIndeed  className='text-2xl sm:text-4xl' />
                 </a>
               </li>
             </ul>

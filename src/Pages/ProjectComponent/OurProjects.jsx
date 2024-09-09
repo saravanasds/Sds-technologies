@@ -4,6 +4,9 @@ import Proj1 from "../../assets/Website-List/Projects/SDS.jpg";
 import Proj2 from "../../assets/Website-List/Projects/greenappleglobal.jpg";
 import Proj3 from "../../assets/Website-List/Projects/surabhi.jpg";
 import Proj4 from "../../assets/Website-List/Projects/Sowbagya.jpg";
+import Proj5 from "../../assets/Website-List/Projects/RR.png";
+import Proj6 from "../../assets/Website-List/Projects/AGR.png";
+import Proj7 from "../../assets/Website-List/Projects/Theiva.png";
 
 import Slider from 'react-slick';
 
@@ -13,6 +16,9 @@ const projectTemp = [
   { title: "Green Apple", image: Proj2, link: "https://greenappleglobal.com/" },
   { title: "Suarbhi Fencing", image: Proj3, link: "https://sds-surabhi.vercel.app/" },
   { title: "Sowbagya", image: Proj4, link: "https://sowbagyafurniture.in/" },
+  { title: "RR-Hair&Skin Care", image: Proj5, link: "" },
+  { title: "AGR S", image: Proj6, link: "" },
+  { title: "Theeiva", image: Proj7, link: "" },
 ];
 
 
