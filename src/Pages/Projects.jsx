@@ -8,6 +8,7 @@ function Projects() {
   return (
     <div className='bg-black overflow-hidden'>
       <ProjComp />
+      
       <OurProjects />
 
       <div>

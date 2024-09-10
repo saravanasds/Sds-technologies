@@ -65,7 +65,7 @@ function WebDev() {
             }}
           >
             <div className="absolute inset-0 bg-black bg-opacity-70 p-4 flex flex-col justify-end transform transition-transform duration-500 translate-y-full group-hover:translate-y-0">
-              <h2 className="text-xl font-semibold text-white mb-2">{template.title}</h2>
+              <h2 className="text-xl font-semibold text-blue-500 mb-2">{template.title}</h2>
               <p className="text-gray-200 mb-4">{template.description}</p>
               <p className="text-gray-200 mb-4">
                 Your digital storefront, crafted to attract, engage, and convert visitors into customers with sleek design and seamless user experience.

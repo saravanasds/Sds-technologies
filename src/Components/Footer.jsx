@@ -113,8 +113,8 @@ function Footer() {
           </div>
 
           <div className='lg:w-3/5'>
-            <ul className='flex justify-between sm:justify-evently text-2xl font-semibold'>
-              <li className='text-blue-900 bg-white p-2 rounded-lg md:px-8 hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
+            <ul className='flex justify-between flex-wrap sm:justify-evently gap-x-4 gap-y-6 text-2xl font-semibold'>
+              <li className='text-blue-900 bg-white  p-2 rounded-lg md:px-8 hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
                 <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaFacebook className='text-2xl sm:text-4xl' />
                   {/* <span className='hidden xl:block'>Facebook</span> */}
