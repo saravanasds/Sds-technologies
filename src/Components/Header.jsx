@@ -34,19 +34,19 @@ function Header() {
   {/* Social Media Icons Section */}
   <div className='flex gap-4 md:gap-6 font-light'>
     <a href="https://www.instagram.com/sds_technology_?igsh=MThrbnFmaTZueDN4eg==" target='_blank' className='text-[#73D1FF] tracking-widest'>
-      <FaInstagramSquare className='h-5 w-5 text-pink-500 md:text-white transition-all duration-300 hover:text-pink-500'/>
+      <FaInstagramSquare className='h-5 w-5 text-white transition-all duration-300 hover:text-pink-500'/>
     </a>
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
-      <FaFacebookSquare className='h-5 w-5 text-blue-900 md:text-white transition-all duration-300 hover:text-blue-900'/>
+      <FaFacebookSquare className='h-5 w-5 text-white transition-all duration-300 hover:text-blue-900'/>
     </a>
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
-      <IoLogoYoutube className='h-5 w-5 text-red-600 md:text-white transition-all duration-300 hover:text-red-600'/>
+      <IoLogoYoutube className='h-5 w-5 text-white transition-all duration-300 hover:text-red-600'/>
     </a>
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
-      <FaLinkedin className='h-5 w-5 text-sky-400 md:text-white transition-all duration-300 hover:text-sky-400'/>
+      <FaLinkedin className='h-5 w-5 text-white transition-all duration-300 hover:text-sky-400'/>
     </a>
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
-      <SiIndeed className='h-5 w-5 text-cyan-600 md:text-white transition-all duration-300 hover:text-cyan-600'/>
+      <SiIndeed className='h-5 w-5 text-white transition-all duration-300 hover:text-cyan-600'/>
     </a>
   </div>
 </div>
