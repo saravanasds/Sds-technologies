@@ -32,17 +32,20 @@ function Header() {
   </div>
 
   {/* Social Media Icons Section */}
-  <div className='flex gap-4 md:gap-6 font-light'>
+  <div className='hidden md:flex gap-4  md:gap-6 font-light'>
     <a href="https://www.instagram.com/sds_technology_?igsh=MThrbnFmaTZueDN4eg==" target='_blank' className='text-[#73D1FF] tracking-widest'>
       <FaInstagramSquare className='h-5 w-5 text-white transition-all duration-300 hover:text-pink-500'/>
     </a>
+
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
       <FaFacebookSquare className='h-5 w-5 text-white transition-all duration-300 hover:text-blue-900'/>
     </a>
+
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
       <IoLogoYoutube className='h-5 w-5 text-white transition-all duration-300 hover:text-red-600'/>
     </a>
-    <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>
+    
+    <a href="https://www.linkedin.com/company/sds-tech-zone/" target='_blank' className='text-[#73D1FF] tracking-widest'>
       <FaLinkedin className='h-5 w-5 text-white transition-all duration-300 hover:text-sky-400'/>
     </a>
     <a href="#" target='_blank' className='text-[#73D1FF] tracking-widest'>

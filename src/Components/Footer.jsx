@@ -133,7 +133,7 @@ function Footer() {
                 </a>
               </li>
               <li className='text-sky-600  hover:text-sky-700 bg-white p-2 rounded-lg md:px-8 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
-                <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
+                <a href="https://www.linkedin.com/company/sds-tech-zone/" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaLinkedin className='text-2xl sm:text-4xl' />
                 </a>
               </li>

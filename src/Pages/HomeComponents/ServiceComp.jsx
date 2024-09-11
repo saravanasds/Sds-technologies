@@ -49,6 +49,7 @@ function ServiceComp() {
 
           <div className='w-[100%] md:w-[50%] flex justify-center items-center' data-aos="fade-left" data-aos-delay="300">
             <img src={mobile} alt="" className='w-[350px] ' />
+            
           </div>
 
         </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+// import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp, FaWhatsapp } from 'react-icons/fa'
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,14 +35,20 @@ function ScrollToTopButton() {
   };
 
   return (
-    <>
+    <div className='fixed bottom-10 right-10 z-[99] flex flex-col space-y-4'>
+
+    <a href="https://wa.me/919384293632?text=Hello%20Sir,%20I%20am%20interested%20in%20your%20service" target="_blank" rel="noopener noreferrer">
+  <button className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-md transform transition-all duration-500 hover:scale-110 hover:rotate-12 animate-bounce hover:animate-spin">
+    <FaWhatsapp className="text-white" size={24} />
+  </button>
+</a>
       {isVisible && (
         <button
-          className="fixed bottom-10 right-10 z-[99] bg-[#73D1FF] hover:shadow-lg hover:shadow-black p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
+          className=" bg-[#73D1FF] hover:shadow-lg hover:shadow-black p-[2px] rounded-full shadow-md transition duration-300 cursor-pointer"
           onClick={scrollToTop}
         >
           <div className="relative w-12 h-12">
-            <FaArrowUp className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black hover:text-gray-400 text-2xl hover:scale-125 transition-all 300ms" />
+            <FaArrowUp className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black hover:text-gray-400 text-2xl hover:scale-125 transition-all 300ms " />
             <svg
               className="absolute w-full h-full"
               viewBox="0 0 36 36"
@@ -65,7 +72,7 @@ function ScrollToTopButton() {
           </div>
         </button>
       )}
-    </>
+    </div>
   );
 }
 
