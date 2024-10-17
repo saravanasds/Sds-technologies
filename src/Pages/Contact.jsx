@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { Helmet } from "react-helmet";
+
 function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -44,7 +46,14 @@ function Contact() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-black py-10">
+    <>
+      <Helmet>
+        <title>Contact Us | SDS Technologies</title>
+        <meta name="description" content="Get in touch with SDS Technologies for web development and tech solutions in Palani. We are here to help!" />
+        <meta name="keywords" content="contact SDS Technologies, web development Palani, tech solutions Palani" />
+      </Helmet>
+      <div className="flex justify-center items-center min-h-screen bg-black py-10">
+      
       <div className="bg-black mt-20 mb-10 p-8 rounded-xl shadow-md w-full max-w-lg text-white border border-cyan-400" style={{ boxShadow: "0px 0px 12px #73D1FF" }}>
         <h1 className="text-3xl font-bold mb-6 text-center text-cyan-400">Service Form</h1>
 
@@ -91,6 +100,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

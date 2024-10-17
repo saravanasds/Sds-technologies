@@ -4,9 +4,12 @@ import OurProjects from './ProjectComponent/OurProjects'
 import NammaPalani from './HomeComponents/NammaPalani'
 import ServiceComp from './HomeComponents/ServiceComp'
 
+import { Helmet } from "react-helmet";
+
 function Projects() {
   return (
-    <div className='bg-black overflow-hidden'>
+    <>
+          <div className='bg-black overflow-hidden'>
       <ProjComp />
       
       <OurProjects />
@@ -25,6 +28,7 @@ function Projects() {
       </div>
 
     </div>
+    </>
   )
 }
 

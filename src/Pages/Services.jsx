@@ -13,6 +13,7 @@ import ServiceHead from './ServiceComponents/ServiceHead';
 import world from ".././assets/world.png"
 import servicebg from ".././assets/servicebg.png"
 
+import { Helmet } from "react-helmet";
 
 function ServicesComponent() {
   const services = [
@@ -76,6 +77,13 @@ function ServicesComponent() {
 
   return (
     <>
+    <Helmet>
+        <title>Our Services | SDS Technologies</title>
+        <meta name="description" content="Discover SDS Technologies' services in web development, digital marketing, and tech solutions in Palani." />
+        <meta name="keywords" content="web development services Palani, digital marketing services, tech solutions Palani" />
+      </Helmet>
+
+      {/*  */}
       <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 mx-auto opacity-30 animate-bg-image backdrop-blur-sm " style={{ backgroundImage: `url(${servicebg})`, backgroundPosition: 'top', backgroundSize: "fit", backgroundRepeat: "no-repeat", backgroundBlendMode: "hard-light" }}></div>
 

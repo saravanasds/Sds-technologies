@@ -8,12 +8,20 @@ import CourseDetails5 from './Coursecomponent/CourseDetails5.jsx';
 import CourseDetails6 from './Coursecomponent/CourseDetails6.jsx';
 import CourseDetails7 from './Coursecomponent/CourseDetails7.jsx';
 
-
+import { Helmet } from "react-helmet";
 
 
 function Courses() {
   return (
-    <div className='overflow-hidden bg-black'>
+<>
+      <Helmet>
+        <title>Courses | SDS Technologies</title>
+        <meta name="description" content="Explore SDS Technologies' courses in web development, app development, AI, and more, with valid certifications." />
+        <meta name="keywords" content="web development courses Palani, app development, AI courses, certification courses Palani" />
+      </Helmet>
+
+      {/*  */}
+<div className='overflow-hidden bg-black'>
       <CourseDetails/>
       <CourseDetails1/>
       <CourseDetails2/>
@@ -22,10 +30,8 @@ function Courses() {
       <CourseDetails4/>
       <CourseDetails6/>
       <CourseDetails7/>
-
-   
-   
     </div>
+</>
   );
 }
 
