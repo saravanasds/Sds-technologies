@@ -15,7 +15,7 @@ function Projects() {
       <OurProjects />
 
       <div>
-        <h1 className=' w-full text-2xl sm:text-4xl text-center font-bold text-[#73D1FF] text-border-bottom p-5 mb-3'
+        <h1 className=' w-full text-2xl sm:text-4xl text-center font-bold text-[#73D1FF] text-border-bottom p-2 pt-5 mb-3'
           data-aos="fade-down"
           data-aos-delay="400"
         >

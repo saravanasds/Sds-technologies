@@ -8,6 +8,9 @@ import MouseFollower from "../Components/MouseFollow";
 import Aboutcom5 from './Aboutcomponent/Aboutcom5';
 import Aboutcom2 from './Aboutcomponent/Aboutcom2';
 
+import OurProjects from './ProjectComponent/OurProjects';
+
+import Slider from 'react-slick';
 import { Helmet } from "react-helmet";
 
 function Home() {
@@ -25,13 +28,15 @@ function Home() {
       <div className="p-6 flex flex-col justify-center items-center overflow-hidden" data-aos="fade-up">
         <Hero />
         <AboutHome/>
-        <Aboutcom2/>      
+        <Aboutcom2/>
+          
         <NammaPalani/>
         <ServiceComp/>
         <Testimonials/>
         <Aboutcom5/>
       </div>
     </div>
+    <OurProjects />   
     </>
   );
 }

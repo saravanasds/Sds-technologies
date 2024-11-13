@@ -4,12 +4,15 @@ import { FaBriefcase } from 'react-icons/fa';
 import bg2 from "../../assets/bg2.png"
 import { GrProjects } from "react-icons/gr";
 
+import OurProjects from '../ProjectComponent/OurProjects';
+
 
 const NammaPalani = () => {
   return (
     <>
       <div className="w-full mt-10 h-auto min-h-screen flex flex-col justify-center items-center lg:flex-row rounded-tl-2xl rounded-tr-2xl bg-opacity-20 backdrop-blur-lg shadow-lg" data-aos="fade-up" data-aos-delay="300" style={{  backgroundPosition: "center", backgroundSize: "cover" }}>
       
+      {/* <OurProjects />     */}
 
         {/* Content Section */}
         <div className="w-full lg:w-[40%] lg:p-10 text-white flex flex-col justify-center items-center h-full" data-aos="slide-right" data-aos-delay="300">

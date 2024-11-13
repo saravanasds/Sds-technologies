@@ -25,6 +25,10 @@ import Tally from './Pages/CourseDetails/Tally';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 function App() {
   const [loading, setLoading] = useState(true);
 
