@@ -22,7 +22,7 @@ const projectTemp = [
   { title: "Sai Bhatra Travels", image: Proj8, link: "https://saibathratravels.in/" },
 ];
 
-function OurProjects() {
+function  OurProjects() {
   const projectSliderSettings = {
     dots: false,
     infinite: true,
@@ -60,7 +60,7 @@ function OurProjects() {
   };
 
   return (
-    <div>
+    <div className='overflow-hidden'>
       <h1 className="w-full text-4xl text-center font-bold text-[#73D1FF] text-border-bottom p-5 mb-3"
         data-aos="fade-down"
         data-aos-delay="400"

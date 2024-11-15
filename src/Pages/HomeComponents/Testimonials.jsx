@@ -6,7 +6,7 @@ import Test3 from "../../assets/test-store.png"
 
 function Testimonials() {
     return (
-        <div className="bg-gradient-to-r from-black via-[#4d6b9c82] to-black rounded-lg flex flex-col items-center justify-center max-h-auto sm:p-10 pt-20" data-aos="flip-up" data-aos-delay="800">
+        <div className="bg-gradient-to-r from-black via-[#4d6b9c82] to-black rounded-lg flex flex-col items-center justify-center max-h-auto sm:p-10 pt-20 overflow-hidden" data-aos="flip-up" data-aos-delay="800">
             <h2 className="text-2xl sm:text-4xl tracking-wider font-semibold text-center text-white mb-8 sm:mb-16">What you are Looking for?</h2>
             <div className="grid gap-6 lg:grid-cols-3 mb-8">
 

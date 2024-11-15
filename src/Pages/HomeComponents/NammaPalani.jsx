@@ -10,9 +10,9 @@ import OurProjects from '../ProjectComponent/OurProjects';
 const NammaPalani = () => {
   return (
     <>
-      <div className="w-full mt-10 h-auto min-h-screen flex flex-col justify-center items-center lg:flex-row rounded-tl-2xl rounded-tr-2xl bg-opacity-20 backdrop-blur-lg shadow-lg" data-aos="fade-up" data-aos-delay="300" style={{  backgroundPosition: "center", backgroundSize: "cover" }}>
+      <div className="w-full mt-10 h-auto min-h-screen flex flex-col justify-center items-center lg:flex-row rounded-tl-2xl rounded-tr-2xl bg-opacity-20 backdrop-blur-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300" style={{  backgroundPosition: "center", backgroundSize: "cover" }}>
       
-      {/* <OurProjects />     */}
+      {/* <OurProjects /> */}
 
         {/* Content Section */}
         <div className="w-full lg:w-[40%] lg:p-10 text-white flex flex-col justify-center items-center h-full" data-aos="slide-right" data-aos-delay="300">
@@ -22,7 +22,7 @@ const NammaPalani = () => {
             <div className='flex items-end gap-2 mb-8'>
               <GrProjects className="text-3xl mr-2 text-[#9FF9FF]" />
               <h2
-                className="text-2xl xl:text-4xl text-[#73D1FF] font-semibold tracking-wider relative inline-block"
+                className="text-2xl xl:text-4xl text-[rgb(115,209,255)] font-semibold tracking-wider relative inline-block"
               >
                Our Planning
                 <span className="absolute -bottom-3 left-0 w-1/2 md:w-3/4 h-[3px] bg-gradient-to-r from-yellow-500 to-transparent animate-pulse"></span>
