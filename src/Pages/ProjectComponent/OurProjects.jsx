@@ -14,12 +14,12 @@ import Slider from 'react-slick';
 const projectTemp = [
   { title: "Namma Palani", image: Proj1, link: "https://nammapalani.org.in/" },
   { title: "Green Apple", image: Proj2, link: "https://greenappleglobal.com/" },
-  { title: "Suarbhi Fencing", image: Proj3, link: "https://sds-surabhi.vercel.app/" },
-  { title: "Sowbagya Furnitures", image: Proj4, link: "https://sowbagyafurniture.in/" },
+  { title: "Surabhi Fencing", image: Proj3, link: "https://sds-surabhi.vercel.app/" },
+  { title: "Sowbagya Furniture", image: Proj4, link: "https://sowbagyafurniture.in/" },
   { title: "RR-Hair&Skin Care", image: Proj5, link: "https://www.rrhairskinclinic.com/" },
   { title: "AGR e-commerce Store", image: Proj6, link: "" },
   { title: "Theivaa Academy", image: Proj7, link: "https://theivaa.vercel.app/" },
-  { title: "Sai Bhatra Travels", image: Proj8, link: "https://saibathratravels.in/" },
+  { title: "Sai Bathra Travels", image: Proj8, link: "https://saibathratravels.in/" },
 ];
 
 function  OurProjects() {
@@ -27,7 +27,7 @@ function  OurProjects() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,               // Show 2 slides on lg screens
+    slidesToShow: 3,               // Show 2 slides on lg screens
     slidesToScroll: 1,
     autoplay: true,                // Enable automatic sliding
     autoplaySpeed: 3000,           // Slide every 3 seconds
@@ -68,7 +68,7 @@ function  OurProjects() {
         Our Projects
       </h1>
 
-      <section className="bg-black p-10">
+      <section className="bg-black lg:p-5 p-5">
       <Slider {...projectSliderSettings}>
           {projectTemp.map((template, index) => (
             <div key={index} className="p-3 sm:p-8">

@@ -1,14 +1,7 @@
 import React from 'react';
-import { TbDeviceDesktopAnalytics } from 'react-icons/tb';
-import { FaMobileAlt } from "react-icons/fa";
-import { PiFigmaLogoFill } from "react-icons/pi";
-import { CgWebsite } from "react-icons/cg";
-import { SiCoinmarketcap } from "react-icons/si";
-import { SlSocialInstagram } from "react-icons/sl";
 import { FaAngleDoubleDown } from "react-icons/fa";
-
-import ServiceCard from './ServiceComponents/ServiceCard';
 import ServiceHead from './ServiceComponents/ServiceHead';
+import ServiceSection from './ServiceComponents/ServiceSection';
 
 import world from ".././assets/world.png"
 import servicebg from ".././assets/servicebg.png"
@@ -16,52 +9,6 @@ import servicebg from ".././assets/servicebg.png"
 import { Helmet } from "react-helmet";
 
 function ServicesComponent() {
-  const services = [
-    {
-      title: 'Web Development',
-      description: 'We build responsive and high-performance websites using the latest technologies.',
-      Icon: TbDeviceDesktopAnalytics,
-      link: '/services/web-development',
-      color: 'cyan', // Example color
-    },
-    {
-      title: 'Mobile App Development',
-      description: 'Custom software solutions to meet your business needs.',
-      Icon: FaMobileAlt,
-      link: '/services/app-development',
-      color: '#E53E3E', // Example color
-    },
-    {
-      title: 'Graphics Design',
-      description: 'Transform your data into actionable insights.',
-      Icon: PiFigmaLogoFill,
-      link: '/services/graphics-design',
-      color: '#F59E0B', // Example color
-    },
-    {
-      title: 'Website Hoisting',
-      description: 'Expand your reach and grow your business with our marketing strategies.',
-      Icon: CgWebsite,
-      link: '/services/website-hoisting',
-      color: '#10B981', // Example color
-    },
-    {
-      title: 'Digital Marketing',
-      description: 'Expand your reach and grow your business with our marketing strategies.',
-      Icon: SiCoinmarketcap,
-      link: '/services/digital-marketing',
-      color: '#3B82F6', // Example color
-    },
-    {
-      title: 'Social Media Marketing',
-      description: 'Expand your reach and grow your business with our marketing strategies.',
-      Icon: SlSocialInstagram,
-      link: '/services/social-media-marketing',
-      color: '#D97706', // Example color
-    },
-    // Add more services as needed
-  ];
-
   const serviceTitle = "Services We Offer";
   const serviceVision = "our expertise together";
 
@@ -106,25 +53,7 @@ function ServicesComponent() {
         </div>
       </div>
 
-      <div className='w-full flex justify-center bg-gradient-to-t from-black via-gray-900 to-black'>
-        <div className="w-[90%] sm:p-4 md:py-20" >
-          <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16 text-cyan-400 bg-gradient-to-r from-transparent via-gray-900 to-transparent pb-3 p-1" data-aos="flip-up" data-aos-delay="800"><span className='text-white'>Our</span> Services</h1>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="zoom-in" data-aos-delay="800">
-            {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                Icon={service.Icon}
-                link={service.link}
-                backgroundImage={service.backgroundImage}
-                color={service.color}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
+      <ServiceSection />
 
       <div className='flex justify-center items-center min-h-screen w-full bg-black pb-10 overflow-hidden'>
         <ServiceHead />

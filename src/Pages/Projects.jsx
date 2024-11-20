@@ -2,7 +2,7 @@ import React from 'react'
 import ProjComp from './ProjectComponent/ProjComp'
 import OurProjects from './ProjectComponent/OurProjects'
 import NammaPalani from './HomeComponents/NammaPalani'
-import ServiceComp from './HomeComponents/ServiceComp'
+// import ServiceComp from './HomeComponents/ServiceComp'
 
 import { Helmet } from "react-helmet";
 
@@ -24,7 +24,7 @@ function Projects() {
         <div className='px-10'>
           <NammaPalani />
         </div>
-        <ServiceComp />
+        {/* <ServiceComp /> */}
       </div>
 
     </div>

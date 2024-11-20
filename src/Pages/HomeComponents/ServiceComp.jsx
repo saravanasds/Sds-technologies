@@ -9,7 +9,7 @@ function ServiceComp() {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-evenly text-white min-h-auto md:p-10 w-[100%]  mt-4 rounded-xl mb-10 bg-opacity-20 backdrop-blur-lg shadow-lg py-10 "
+        className="flex flex-col items-center justify-evenly text-white min-h-auto md:p-10 w-[100%]  mt-4 rounded-xl lg:mb-10 bg-opacity-20 backdrop-blur-lg shadow-lg lg:py-10 py-5 "
         style={{
           background: `url(${bg8})`
         }}
@@ -48,7 +48,7 @@ function ServiceComp() {
           </div>
 
           <div className='w-[100%] md:w-[50%] flex justify-center items-center' data-aos="fade-left" data-aos-delay="300">
-            <img src={mobile} alt="" className='w-[350px] ' />
+            <img src={mobile} alt="" className='w-[350px] hidden lg:block' />
             
           </div>
 

@@ -10,7 +10,7 @@ import OurProjects from '../ProjectComponent/OurProjects';
 const NammaPalani = () => {
   return (
     <>
-      <div className="w-full mt-10 h-auto min-h-screen flex flex-col justify-center items-center lg:flex-row rounded-tl-2xl rounded-tr-2xl bg-opacity-20 backdrop-blur-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300" style={{  backgroundPosition: "center", backgroundSize: "cover" }}>
+      <div className="w-full mt-10 h-auto min-h-screen flex flex-col justify-center items-center lg:flex-row rounded-tl-2xl rounded-tr-2xl bg-opacity-20 backdrop-blur-lg shadow-lg overflow-hidden px-5 py-5 lg:px-0" data-aos="fade-up" data-aos-delay="300" style={{  backgroundPosition: "center", backgroundSize: "cover" }}>
       
       {/* <OurProjects /> */}
 

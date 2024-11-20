@@ -46,9 +46,7 @@ function About() {
       </div>
       <Aboutcom3 />
       <Aboutcom4 />
-      <div className='w-[100%] flex justify-center items-center'>
-        <div className='w-[90%]'><Aboutcom5 /></div>
-      </div>
+   
       <Aboutcom6 />
       <AboutcomIframe />
     </div>

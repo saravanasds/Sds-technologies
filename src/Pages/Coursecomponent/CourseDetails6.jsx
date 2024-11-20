@@ -6,7 +6,7 @@ import { SiAntdesign } from "react-icons/si";
 const CourseDetail6 = () => {
   return (
     <>
-      <div className='w-[100%] min-h-screen flex  flex-col justify-center items-center  bg-black sm:p-10' >
+      <div className='w-[100%] min-h-screen flex  flex-col justify-center items-center  bg-black px-5 lg:px-0 py-5' >
 
         <h2 className='text-center text-4xl sm:text-5xl font-semibold text-[#73D1FF] tracking-widern my-5' data-aos="slide-right" data-aos-delay="300">We Teach </h2>
 

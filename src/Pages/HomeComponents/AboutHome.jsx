@@ -10,17 +10,17 @@ const AboutHome = () => {
       <div className="w-full lg:w-1/2 md:p-10 md:pt-10 text-black flex flex-col justify-center gap-4 h-full" data-aos="slide-right" data-aos-delay="300">
 
         <div className='p-4 rounded-md shadow-md transition duration-300 hover:bg-opacity-20 hover:bg-gray-400 hover:backdrop-blur-lg' >
-          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">Projects
+          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">Web Development
             <span className="absolute -bottom-3 left-0 w-1/2 md:w-3/4 h-[3px] bg-gradient-to-r from-orange-500 to-transparent animate-pulse"></span>
           </h2>
 
           <p className="text-md indent-10 text-white tracking-wider">
-            Explore our diverse range of projects that showcase our expertise and dedication to delivering high-quality solutions.
+            Explore our diverse range of projects that showcase our expertise and dedication to delivering high-quality solutions.Customize your website to reflect your unique style and meet your business goals with ease.
           </p>
         </div>
 
         <div className='p-4 rounded-md shadow-md transition duration-300 hover:bg-opacity-20 hover:bg-gray-400 hover:backdrop-blur-lg' >
-          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">Marketing
+          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">Digital Marketing
             <span className="absolute -bottom-3 left-0 w-1/2 md:w-3/4 h-[3px] bg-gradient-to-r from-orange-500 to-transparent animate-pulse"></span>
           </h2>
           <p className="text-md indent-10 text-white tracking-wider">
@@ -29,11 +29,11 @@ const AboutHome = () => {
         </div>
 
         <div className='p-4 rounded-md shadow-md transition duration-300 hover:bg-opacity-20 hover:bg-gray-400 hover:backdrop-blur-lg' >
-          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">About Us
+          <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-[#73D1FF] tracking-wider relative inline-block">Explore Courses
             <span className="absolute -bottom-3 left-0 w-1/2 md:w-3/4 h-[3px] bg-gradient-to-r from-orange-500 to-transparent animate-pulse"></span>
           </h2>
           <p className="text-md indent-10 text-white tracking-wider">
-            Learn more about our company, our values, and our mission to provide exceptional service and innovative solutions to our clients.
+          Master new skills with our expert-led courses, crafted to advance your career, unlock new opportunities, and empower you to achieve your goals.
           </p>
         </div>
 

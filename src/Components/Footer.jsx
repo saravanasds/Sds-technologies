@@ -26,7 +26,7 @@ function Footer() {
           <div className="flex items-center justify-center" >
             <h1>
               <div className="text-2xl font-bold text-white uppercase tracking-wider transition-all duration-300 hover:text-blue-500 hover:scale-110 cursor-pointer">
-                <img src={sdslogo} alt="" className='w-60' />
+                <img src={sdslogo} alt="" className='w-60'/>
               </div>
 
             </h1>
@@ -100,42 +100,25 @@ function Footer() {
               Dindigul
               </p>
           </div>
-          {/* <div className="flex flex-col justify-start items-center  md:p-6 text-white">
-            <div className='w-full  relative'>
-              <h3 className="w-full text-xl font-semibold mb-4 font-montserrat text-left relative inline-block">Contact
-                <span className="absolute -bottom-2 left-0 w-1/2 md:w-3/4 h-[2px] bg-gradient-to-r from-red-500 to-transparent"></span>
-              </h3>
-            </div>
-            <ul className="text-white space-y-2 w-full">
-              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
-               
-                <Link to="/" onClick={scrollToTop}>9384293632</Link>
-              </li>
-              <li className="flex items-center hover:text-[#73D1FF] transition-colors duration-300">
-             
-                <Link to="/about" onClick={scrollToTop}>sdspalani@gmail.com</Link>
-              </li>
-
-            </ul>
-          </div> */}
+        
         </div>
 
         {/* Social medias */}
         <div className='flex justify-evenly items-evenly gap-5 lg:gap-10 w-full p-4 md:p-6 my-6 flex-col lg:flex-row rounded-lg shadow-lg border-[1px] border-[#73D1FF]'>
-          <div className='lg:w-2/5 text-center relative flex justify-center items-center lg:gap-10'>
+          <div className='lg:w-2/5 text-center relative flex flex-col lg:flex-row justify-center items-center lg:gap-10'>
             <h2 className=' text-sm sm:text-xl font-montserrat text-white relative  text-left flex justify-center items-center gap-2'>
             
-            <FaPhoneAlt className="text-xl sm:text-4xl p-2 bg-white text-green-600 rounded-full" />
+            <FaPhoneAlt className="text-3xl sm:text-4xl p-2 bg-white text-green-600 rounded-full" />
               <span>9384293632</span>
             </h2>
             <h2 className=' text-sm sm:text-xl font-montserrat text-white relative text-left  flex justify-center items-center gap-2'>
-            <FaEnvelope className="text-xl sm:text-4xl p-2 bg-white text-green-600 rounded-full" />
+            <FaEnvelope className="text-3xl sm:text-4xl p-2 bg-white text-green-600 rounded-full" />
               sdspalani@gmail.com
             </h2>
           </div>
  
-          <div className='lg:w-3/5'>
-            <ul className='flex justify-between flex-wrap sm:justify-end gap-x-4 gap-y-6 text-2xl font-semibold'>
+          <div className='lg:w-3/5 '>
+            <ul className='flex justify-between flex-wrap sm:justify-end lg:gap-x-4 gap-x-1 gap-y-6 text-2xl font-semibold'>
               <li className='text-blue-900 bg-white  p-2 rounded-full hover:text-blue-500 transition duration-300 ease-in-out cursor-pointer hover:scale-125'>
                 <a href="http://" target="_blank" rel="noopener noreferrer" className='flex items-center gap-2'>
                   <FaFacebook className='text-xl sm:text-xl' />

@@ -1,12 +1,10 @@
 import React from 'react';
 import Hero from './HomeComponents/Hero';
 import AboutHome from './HomeComponents/AboutHome';
-import NammaPalani from './HomeComponents/NammaPalani';
-import ServiceComp from './HomeComponents/ServiceComp';
 import Testimonials from './HomeComponents/Testimonials';
 import MouseFollower from "../Components/MouseFollow";
-import Aboutcom5 from './Aboutcomponent/Aboutcom5';
-import Aboutcom2 from './Aboutcomponent/Aboutcom2';
+import ServiceSection from "./ServiceComponents/ServiceSection"
+import CourseDetails1 from "../Pages/Coursecomponent/CourseDetails1"
 
 import OurProjects from './ProjectComponent/OurProjects';
 import Slider from 'react-slick';
@@ -25,18 +23,15 @@ function Home() {
       <div className="relative home-section bg-black overflow-hidden">
       <MouseFollower/>
       <div className="p-6 flex flex-col justify-center items-center overflow-hidden" data-aos="fade-up">
-        <Hero />
+        <Hero/>
         <AboutHome/>
-        <Aboutcom2/>
-        <ServiceComp/>
-      
-        {/* <Aboutcom5/> */}
       </div>
      </div>
-     
+     <ServiceSection/>
+     <CourseDetails1/>
     <OurProjects /> 
     <Testimonials/>
-    <NammaPalani/>
+
     </>
   );
 }
