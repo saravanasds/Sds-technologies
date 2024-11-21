@@ -3,7 +3,7 @@ import React from 'react';
 import Proj1 from "../../assets/Website-List/Projects/SDS.jpg";
 import Proj2 from "../../assets/Website-List/Projects/greenappleglobal.jpg";
 import Proj3 from "../../assets/Website-List/Projects/surabhi.jpg";
-import Proj4 from "../../assets/Website-List/Projects/Sowbagya.jpg";
+import Proj4 from "../../assets/Website-List/Projects/sowbagya.png";
 import Proj5 from "../../assets/Website-List/Projects/RR.png";
 import Proj6 from "../../assets/Website-List/Projects/AGR.png";
 import Proj7 from "../../assets/Website-List/Projects/Theiva.png";
@@ -27,11 +27,11 @@ function  OurProjects() {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,               // Show 2 slides on lg screens
+    slidesToShow: 1,               // Show 2 slides on lg screens
     slidesToScroll: 1,
     autoplay: true,                // Enable automatic sliding
     autoplaySpeed: 3000,           // Slide every 3 seconds
-    arrows: false,                 // Remove arrow controls
+    arrows: true,                 // Remove arrow controls
     responsive: [
       {
         breakpoint: 1024,
@@ -65,31 +65,28 @@ function  OurProjects() {
         data-aos="fade-down"
         data-aos-delay="400"
       >
-        Our Projects
+         Projects
       </h1>
 
-      <section className="bg-black lg:p-5 p-5">
+      <section className=" bg-black lg:p-5 p-5 mx-auto container">
       <Slider {...projectSliderSettings}>
           {projectTemp.map((template, index) => (
-            <div key={index} className="p-3 sm:p-8">
+            <div key={index} className="w-auto h-auto lg:h-auto p-3 sm:p-8 flex justify-center items-center" >
               <div
-                className="relative bg-black border-2 border-gray-300 rounded-lg shadow-lg w-full h-72 lg:h-80 transform transition-transform duration-300 hover:scale-110 hover:shadow-4xl overflow-hidden group"
+                className="relative bg-black border-2 border-gray-300 rounded-lg shadow-lg w-auto h-[250px] lg:w-full lg:h-[450px]  transform transition-transform duration-300 hover:scale-110 hover:shadow-4xl overflow-hidden group p-5"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
                 <div
-                  className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                  className="absolute inset-0 bg-cover bg-start md:bg-center bg-no-repeat w-[100%]  h-[250px] lg:h-[520px] "
                   style={{
                     backgroundImage: `url(${template.image})`,
                   }}
                 ></div>
                 <div className="absolute inset-0 bg-black bg-opacity-70 p-4 flex flex-col justify-end transform transition-transform duration-500 z-30 translate-y-full group-hover:translate-y-0">
-                  <a href={template.link} target="_blank" rel="noopener noreferrer" className="text-center text-[#162e39] mb-4 bg-gray-200 rounded-xl p-4 text-md font-semibold tracking-wider">
+                  <a href={template.link} target="_blank" rel="noopener noreferrer" className="text-center text-[#162e39] mb-4 bg-gray-200 rounded-xl p-4 text-xl font-bold tracking-wider">
                     Visit Site
                   </a>
-                </div>
-                <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black via-gray-900 to-black bg-opacity-50 flex items-center justify-center text-white tracking-wider font-black text-2xl underline transition-opacity duration-300 opacity-100 group-hover:opacity-0">
-                  {template.title}
                 </div>
               </div>
             </div>

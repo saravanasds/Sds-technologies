@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
-import sdslogo from ".././assets/logo-white.png"
+import sdslogo from "../assets/Website-List/Projects/sdslogo.png"
 import { FaHome, FaServicestack, FaInfoCircle, FaEnvelope, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { IoIosMail } from "react-icons/io";
 import { GoFileSubmodule } from "react-icons/go";

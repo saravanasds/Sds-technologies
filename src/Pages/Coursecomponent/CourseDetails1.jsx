@@ -81,7 +81,7 @@ const CoursesDetails = () => {
   };
 
   return (
-    <div className="w-full bg-black lg:py-10 py-5">
+    <div className="w-full bg-black lg:py-10 py-5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 pb-1">
           <h2 className=" text-[#73D1FF] text-3xl sm:text-5xl font-bold tracking-wider mb-6" data-aos="slide-left" data-aos-delay="200">Explore our Courses</h2>
@@ -89,7 +89,7 @@ const CoursesDetails = () => {
             Enhance Your Skills with us, and upgrade your knowledge with our experienced tutor members.
           </h3>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-20 gap-10" >
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-5" >
           {course.map((view) => (
             <Link to={view.link} onClick={scrollToTop}>
               <div
