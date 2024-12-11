@@ -60,7 +60,7 @@ function  OurProjects() {
   };
 
   return (
-    <div className='overflow-hidden'>
+    <div className='w-full overflow-hidden'>
       <h1 className="w-full text-4xl text-center font-bold text-[#73D1FF] text-border-bottom p-5 mb-3"
         data-aos="fade-down"
         data-aos-delay="400"
@@ -68,7 +68,7 @@ function  OurProjects() {
          Projects
       </h1>
 
-      <section className=" bg-black lg:p-5 p-5 mx-auto container">
+      <section className="w-[90%] bg-black lg:p-5 p-5 mx-auto container">
       <Slider {...projectSliderSettings}>
           {projectTemp.map((template, index) => (
             <div key={index} className="w-auto h-auto lg:h-auto p-3 sm:p-8 flex justify-center items-center" >
