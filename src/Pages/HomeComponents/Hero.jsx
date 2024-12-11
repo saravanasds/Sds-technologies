@@ -37,11 +37,11 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative mt-20 h-screen w-full flex items-center justify-center hero-section">
+    <section className="relative mt-16 h-screen w-full flex items-center justify-center hero-section overflow-hidden">
 
       <div className="absolute inset-0 mx-auto bg-cover bg-center animate-bg-image" style={{ backgroundImage: `url(${HeroBg})`, }} ></div>
 
-      <div className="relative z-10 text-center p-5 w-full -mt-[200px]" >
+      <div className="relative z-10 text-center p-5 w-full -mt-[200px] " >
         <Slider {...settings}>
           <div>
             <h1 className="text-3xl md:text-5xl text-white font-bold mb-4" data-aos="slide-right" data-aos-delay="300">
@@ -63,11 +63,11 @@ const Hero = () => {
           We're glad you're here. Discover amazing content and join our community!
         </p>
         <button onClick={scrollToSection} className="bg-gradient-to-r from-[#73D1FF] via-gray-900 to-black hover:bg-gradient-to-l text-white font-semibold py-3 px-8 rounded-xl transition-all duration-1000 ease-in-out border-[1px] border-gray-800 hover:bg-[length:200%_200%] bg-[length:150%_150%]" data-aos="flip-left" data-aos-delay="300">
-  <div className='flex items-center gap-3 font-bold text-xl text-white '>
-    <span className='text-lg md:text-2xl text-white'>Get Started</span>
-    <span className='text-2xl animate-bounce'><FaRegArrowAltCircleDown /></span>
-  </div>
-</button>
+          <div className='flex items-center gap-3 font-bold text-xl text-white '>
+            <span className='text-lg md:text-2xl text-white'>Get Started</span>
+            <span className='text-2xl animate-bounce'><FaRegArrowAltCircleDown /></span>
+          </div>
+        </button>
 
       </div>
     </section>

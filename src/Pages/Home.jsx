@@ -13,24 +13,25 @@ import { Helmet } from "react-helmet";
 function Home() {
   return (
     <>
-     <Helmet>
+      <Helmet>
         <title>Home | SDS Technologies - Web Development & Tech Solutions in Palani</title>
         <meta name="description" content="Welcome to SDS Technologies. We specialize in web development, tech solutions, and digital marketing in Palani. Contact us to learn more!" />
         <meta name="keywords" content="SDS Technologies, web development Palani, tech solutions Palani, SDS Tech Zone" />
       </Helmet>
-      
+
       {/*  */}
-      <div className="relative home-section bg-black overflow-hidden">
-      <MouseFollower/>
-      <div className="p-6 flex flex-col justify-center items-center overflow-hidden" data-aos="fade-up">
-        <Hero/>
-        <AboutHome/>
+      <div className="relative bg-black overflow-hidden">
+        <MouseFollower />
+        <div className="flex flex-col justify-center items-center overflow-hidden" >
+          <Hero />
+          <AboutHome />
+          <ServiceSection />
+          <CourseDetails1 />
+          <OurProjects />
+          <Testimonials />
+        </div>
       </div>
-     </div>
-     <ServiceSection/>
-     <CourseDetails1/>
-    <OurProjects /> 
-    <Testimonials/>
+
 
     </>
   );
