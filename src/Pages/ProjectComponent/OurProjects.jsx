@@ -12,6 +12,7 @@ import SaiBathra from "../../assets/Website-List/Projects/sai-bathra-travels.jpg
 import Guruvappa from "../../assets/Website-List/Projects/guruvaappa-school.png";
 import AnnaiTrust from "../../assets/Website-List/Projects/annai-educational-trust.png";
 import Sams from "../../assets/Website-List/Projects/sams-physio.png";
+import VagaraiMarathon from "../../assets/Website-List/Projects/vagarai-marathon.png";
 
 import Slider from 'react-slick';
 
@@ -19,6 +20,7 @@ const projectTemp = [
   { title: "Guruvappa Higher Secondary School", image: Guruvappa, link: "https://guruvappaschool.com/" },
   { title: "Annai Educational Trust", image: AnnaiTrust, link: "https://annai-edu-sample.vercel.app/" },
   { title: "Sams Physio & Rehab", image: Sams, link: "https://samsphysiorehab.in/" },
+  { title: "Vagarai Marathon", image: VagaraiMarathon, link: "https://vagaraimarathon.in/" },
   { title: "Namma Palani", image: SDSTechnologies, link: "https://nammapalani.org.in/" },
   { title: "Green Apple", image: GreenAppleGlobal, link: "https://greenappleglobal.com/" },
   { title: "Surabhi Fencing", image: Surbhi, link: "https://sds-surabhi.vercel.app/" },
@@ -33,11 +35,11 @@ function  OurProjects() {
   const projectSliderSettings = {
     dots: false,
     infinite: true,
-    speed: 5000,
+    speed: 2000,
     slidesToShow: 1,               // Show 2 slides on lg screens
     slidesToScroll: 1,
     autoplay: true,                // Enable automatic sliding
-    autoplaySpeed: 3000,           // Slide every 3 seconds
+    autoplaySpeed: 6000,           // Slide every 3 seconds
     arrows: false,                 // Remove arrow controls
     responsive: [
       {
