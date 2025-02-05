@@ -1,37 +1,44 @@
 import React from 'react';
+import { RiGlobeFill } from "react-icons/ri";
 
-import Proj1 from "../../assets/Website-List/Projects/SDS.jpg";
-import Proj2 from "../../assets/Website-List/Projects/greenappleglobal.jpg";
-import Proj3 from "../../assets/Website-List/Projects/surabhi.jpg";
-import Proj4 from "../../assets/Website-List/Projects/sowbagya.png";
-import Proj5 from "../../assets/Website-List/Projects/RR.png";
-import Proj6 from "../../assets/Website-List/Projects/AGR.png";
-import Proj7 from "../../assets/Website-List/Projects/Theiva.png";
-import Proj8 from "../../assets/Website-List/Projects/sai-bathra-travels.jpg";
+import SDSTechnologies from "../../assets/Website-List/Projects/SDS.jpg";
+import GreenAppleGlobal from "../../assets/Website-List/Projects/greenappleglobal.jpg";
+import Surbhi from "../../assets/Website-List/Projects/surabhi.jpg";
+import Sowbagya from "../../assets/Website-List/Projects/sowbagya.png";
+import RRHair from "../../assets/Website-List/Projects/RR.png";
+import AGR from "../../assets/Website-List/Projects/AGR.png";
+import Theiva from "../../assets/Website-List/Projects/Theiva.png";
+import SaiBathra from "../../assets/Website-List/Projects/sai-bathra-travels.jpg";
+import Guruvappa from "../../assets/Website-List/Projects/guruvaappa-school.png";
+import AnnaiTrust from "../../assets/Website-List/Projects/annai-educational-trust.png";
+import Sams from "../../assets/Website-List/Projects/sams-physio.png";
 
 import Slider from 'react-slick';
 
 const projectTemp = [
-  { title: "Namma Palani", image: Proj1, link: "https://nammapalani.org.in/" },
-  { title: "Green Apple", image: Proj2, link: "https://greenappleglobal.com/" },
-  { title: "Surabhi Fencing", image: Proj3, link: "https://sds-surabhi.vercel.app/" },
-  { title: "Sowbagya Furniture", image: Proj4, link: "https://sowbagyafurniture.in/" },
-  { title: "RR-Hair&Skin Care", image: Proj5, link: "https://www.rrhairskinclinic.com/" },
-  { title: "AGR e-commerce Store", image: Proj6, link: "" },
-  { title: "Theivaa Academy", image: Proj7, link: "https://theivaa.vercel.app/" },
-  { title: "Sai Bathra Travels", image: Proj8, link: "https://saibathratravels.in/" },
+  { title: "Guruvappa Higher Secondary School", image: Guruvappa, link: "https://guruvappaschool.com/" },
+  { title: "Annai Educational Trust", image: AnnaiTrust, link: "https://annai-edu-sample.vercel.app/" },
+  { title: "Sams Physio & Rehab", image: Sams, link: "https://samsphysiorehab.in/" },
+  { title: "Namma Palani", image: SDSTechnologies, link: "https://nammapalani.org.in/" },
+  { title: "Green Apple", image: GreenAppleGlobal, link: "https://greenappleglobal.com/" },
+  { title: "Surabhi Fencing", image: Surbhi, link: "https://sds-surabhi.vercel.app/" },
+  { title: "Sowbagya Furniture", image: Sowbagya, link: "https://sowbagyafurniture.in/" },
+  { title: "RR-Hair&Skin Care", image: RRHair, link: "https://www.rrhairskinclinic.com/" },
+  { title: "AGR e-commerce Store", image: AGR, link: "" },
+  { title: "Theivaa Academy", image: Theiva, link: "https://theivaa.vercel.app/" },
+  { title: "Sai Bathra Travels", image: SaiBathra, link: "https://saibathratravels.in/" },
 ];
 
 function  OurProjects() {
   const projectSliderSettings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 5000,
     slidesToShow: 1,               // Show 2 slides on lg screens
     slidesToScroll: 1,
     autoplay: true,                // Enable automatic sliding
     autoplaySpeed: 3000,           // Slide every 3 seconds
-    arrows: true,                 // Remove arrow controls
+    arrows: false,                 // Remove arrow controls
     responsive: [
       {
         breakpoint: 1024,
@@ -83,6 +90,16 @@ function  OurProjects() {
                     backgroundImage: `url(${template.image})`,
                   }}
                 ></div>
+<div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 p-2 flex items-center gap-2">
+  <span className="text-blue-400 text-3xl">
+  <RiGlobeFill /> {/* Replace with your preferred icon */}
+  </span>
+  <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 font-extrabold text-2xl md:text-3xl"
+      style={{ WebkitTextStroke: "1px #162e39" }}>
+    {template.title}
+  </h4>
+</div>
+
                 <div className="absolute inset-0 bg-black bg-opacity-70 p-4 flex flex-col justify-end transform transition-transform duration-500 z-30 translate-y-full group-hover:translate-y-0">
                   <a href={template.link} target="_blank" rel="noopener noreferrer" className="text-center text-[#162e39] mb-4 bg-gray-200 rounded-xl p-4 text-xl font-bold tracking-wider">
                     Visit Site
