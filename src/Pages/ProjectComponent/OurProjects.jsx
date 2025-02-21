@@ -31,7 +31,7 @@ const projectTemp = [
   { title: "Sai Bathra Travels", image: SaiBathra, link: "https://saibathratravels.in/" },
 ];
 
-function  OurProjects() {
+function OurProjects() {
   const projectSliderSettings = {
     dots: false,
     infinite: true,
@@ -40,7 +40,7 @@ function  OurProjects() {
     slidesToScroll: 1,
     autoplay: true,                // Enable automatic sliding
     autoplaySpeed: 6000,           // Slide every 3 seconds
-    arrows: false,                 // Remove arrow controls
+    arrows: true,                 // Remove arrow controls
     responsive: [
       {
         breakpoint: 1024,
@@ -74,11 +74,11 @@ function  OurProjects() {
         data-aos="fade-down"
         data-aos-delay="400"
       >
-         Projects
+        Portfolio
       </h1>
 
       <section className="w-[90%] bg-black lg:p-5 p-5 mx-auto container">
-      <Slider {...projectSliderSettings}>
+        <Slider {...projectSliderSettings}>
           {projectTemp.map((template, index) => (
             <div key={index} className="w-auto h-auto lg:h-auto p-3 sm:p-8 flex justify-center items-center" >
               <div
@@ -92,15 +92,15 @@ function  OurProjects() {
                     backgroundImage: `url(${template.image})`,
                   }}
                 ></div>
-<div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 p-2 flex items-center gap-2">
-  <span className="text-blue-400 text-3xl">
-  <RiGlobeFill /> {/* Replace with your preferred icon */}
-  </span>
-  <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 font-extrabold text-2xl md:text-3xl"
-      style={{ WebkitTextStroke: "1px #162e39" }}>
-    {template.title}
-  </h4>
-</div>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-4 p-2 flex items-center gap-2">
+                  <span className="text-blue-400 text-3xl">
+                    <RiGlobeFill /> {/* Replace with your preferred icon */}
+                  </span>
+                  <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 font-extrabold text-2xl md:text-3xl"
+                    style={{ WebkitTextStroke: "1px #162e39" }}>
+                    {template.title}
+                  </h4>
+                </div>
 
                 <div className="absolute inset-0 bg-black bg-opacity-70 p-4 flex flex-col justify-end transform transition-transform duration-500 z-30 translate-y-full group-hover:translate-y-0">
                   <a href={template.link} target="_blank" rel="noopener noreferrer" className="text-center text-[#162e39] mb-4 bg-gray-200 rounded-xl p-4 text-xl font-bold tracking-wider">
@@ -110,7 +110,7 @@ function  OurProjects() {
               </div>
             </div>
           ))}
-        </Slider> 
+        </Slider>
       </section>
     </div>
   );
