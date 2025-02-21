@@ -109,7 +109,7 @@ function Header() {
                   : "text-white hover:text-[#73D1FF] text-sm pb-2 uppercase font-semibold nav-link tracking-wider"
               }
             >
-              Projects
+              Portfolio
             </NavLink>
           </li>
           <li>

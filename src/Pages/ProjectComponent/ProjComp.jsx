@@ -10,7 +10,7 @@ const ProjComp = () => {
     </span>
   ));
 
-  const titleWave = getWavingText("Our Projects");
+  const titleWave = getWavingText("Portfolio");
 
   return (
     <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
