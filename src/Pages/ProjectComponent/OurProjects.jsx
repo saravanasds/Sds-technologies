@@ -6,7 +6,7 @@ import GreenAppleGlobal from "../../assets/Website-List/Projects/greenapplegloba
 import Surbhi from "../../assets/Website-List/Projects/surabhi.jpg";
 import Sowbagya from "../../assets/Website-List/Projects/sowbagya.png";
 import RRHair from "../../assets/Website-List/Projects/RR.png";
-import AGR from "../../assets/Website-List/Projects/AGR.png";
+// import AGR from "../../assets/Website-List/Projects/AGR.png";
 import Theiva from "../../assets/Website-List/Projects/Theiva.png";
 import SaiBathra from "../../assets/Website-List/Projects/sai-bathra-travels.jpg";
 import Guruvappa from "../../assets/Website-List/Projects/guruvaappa-school.png";
@@ -26,7 +26,7 @@ const projectTemp = [
   { title: "Surabhi Fencing", image: Surbhi, link: "https://sds-surabhi.vercel.app/" },
   { title: "Sowbagya Furniture", image: Sowbagya, link: "https://sowbagyafurniture.in/" },
   { title: "RR-Hair&Skin Care", image: RRHair, link: "https://www.rrhairskinclinic.com/" },
-  { title: "AGR e-commerce Store", image: AGR, link: "" },
+  // { title: "AGR e-commerce Store", image: AGR, link: "" },
   { title: "Theivaa Academy", image: Theiva, link: "https://theivaa.vercel.app/" },
   { title: "Sai Bathra Travels", image: SaiBathra, link: "https://saibathratravels.in/" },
 ];
